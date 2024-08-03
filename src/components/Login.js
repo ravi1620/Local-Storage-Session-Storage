@@ -46,10 +46,10 @@ useEffect(()=>{
 
 //  if(localStorage.getItem("email")&& localStorage.getItem("password"))
 
-  emailInputRef.current.value = sessionStorage.getItem("email");
- passwordInputRef.current.value = sessionStorage.getItem("password");
+  emailInputRef.current.value = localStorage.getItem("email");
+ passwordInputRef.current.value = localStorage.getItem("password");
 
-if(sessionStorage.getItem("email")&& sessionStorage.getItem("password")){
+if(localStorage.getItem("email")&& localStorage.getItem("password")){
   onLoginClick();
  }
 
